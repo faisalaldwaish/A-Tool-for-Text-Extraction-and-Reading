@@ -58,3 +58,8 @@ You can view the live demo of this project on [Hugging Face Spaces](#).
 
 ## Presenstation Link
 - [`Google Slides`](https://docs.google.com/presentation/d/1csnTqCqBjsmVmruqe7W-cSrLqkad8YsOxaVWsxYRYzQ/edit?usp=sharing)
+
+## Video 
+## Video 
+link video https://drive.google.com/file/d/13Jomn-5a9aJ191AUHx6Pz1AkPzAsbFGh/view?usp=sharing
+
