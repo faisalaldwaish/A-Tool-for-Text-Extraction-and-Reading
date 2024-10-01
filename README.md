@@ -54,8 +54,7 @@ This project leverages the following Hugging Face models for different tasks:
 
 ## Demo
 You can view the live demo of this project on [Hugging Face Spaces](#).
-- **Hugging Face Space**: [Link to Hugging Face Space]
-- (https://huggingface.co/spaces/Faisalaldwaish1/A_Tool_for_Text_Extraction_and_Reading)
+- **Hugging Face Space**: [Link to Hugging Face Space](https://huggingface.co/spaces/Faisalaldwaish1/A_Tool_for_Text_Extraction_and_Reading)
 
 ## Presenstation Link
 - [`Google Slides`](https://docs.google.com/presentation/d/1csnTqCqBjsmVmruqe7W-cSrLqkad8YsOxaVWsxYRYzQ/edit?usp=sharing)
