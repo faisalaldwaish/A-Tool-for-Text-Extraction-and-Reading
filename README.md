@@ -1,7 +1,3 @@
-Here's a well-organized and formatted version of the README content for your GitHub project:
-
----
-
 # A Tool for Text Extraction and Reading
 
 ## Project Overview
