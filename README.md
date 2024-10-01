@@ -1,52 +1,59 @@
 # A Tool for Text Extraction and Reading
 
 ## Project Overview
-This project showcases a bilingual AI tool built using Hugging Face pipelines for tasks such as text summarization, translation, and text-to-speech conversion. The tool supports both English and Arabic, aiming to explore the capabilities of Hugging Face models in natural language processing (NLP), text-to-audio conversion, and audio transcription.
 
-## Features
-- **Text Summarization**: Generates concise summaries of input text using advanced Hugging Face models.
-- **Translation**: Translates summarized English text into Arabic.
-- **Text-to-Speech**: Converts text (both English and Arabic) to speech using Google Text-to-Speech (gTTS).
-- **Audio Transcription**: Transcribes uploaded audio files into text using the Whisper and Wav2Vec2 models.
+This project demonstrates a bilingual AI tool using Hugging Face pipelines for **text summarization**, **translation**, and **text-to-speech conversion**. The project provides functionality in both **English** and **Arabic**. It aims to explore the capabilities of Hugging Face models in natural language processing (NLP), text-to-audio, and audio transcription tasks.
 
+### Features:
+- **Text Summarization**: Generate concise summaries of input text using state-of-the-art Hugging Face models.
+- **Translation**: Translate summarized English text into Arabic.
+- **Text-to-Speech**: Convert text (both English and Arabic) into speech using `gTTS`.
+- **Audio Transcription**: Convert uploaded audio to text using the Whisper and Wav2Vec2 models.
+  
 ## Models and Pipelines
-This project employs the following Hugging Face models and tools for different tasks:
 
-### Text Summarization
-- **Model**: `facebook/bart-large-cnn`
-- **Explanation**: BART is an encoder-decoder model pre-trained for multiple language tasks. It excels at abstractive text summarization, making it suitable for summarizing long documents coherently and effectively.
+This project leverages the following Hugging Face models for different tasks:
 
-### Translation
-- **Model**: `Helsinki-NLP/opus-mt-en-ar`
-- **Explanation**: Part of the OPUS-MT project, this model is trained specifically for translating between English and Arabic. It is chosen for its high accuracy in generating grammatically correct translations.
+1. **Text Summarization**:
+   - **Model**: [`facebook/bart-large-cnn`](https://huggingface.co/facebook/bart-large-cnn)
+   - **Explanation**: BART is an encoder-decoder model pre-trained for various language tasks. It is highly efficient for abstractive text summarization and was chosen due to its effectiveness in summarizing long documents with coherence.
+   
+2. **Translation**:
+   - **Model**: [`Helsinki-NLP/opus-mt-en-ar`](https://huggingface.co/Helsinki-NLP/opus-mt-en-ar)
+   - **Explanation**: This model is part of the OPUS-MT project, specifically trained for translation tasks between English and Arabic. It was chosen due to its high accuracy in generating grammatically correct translations between these two languages.
 
-### Text-to-Speech
-- **Library**: `gTTS (Google Text-to-Speech)`
-- **Explanation**: gTTS is lightweight and supports multiple languages, including English and Arabic. It offers a simple yet effective way to convert text into speech.
+3. **Text-to-Speech**:
+   - **Library**: `gTTS` (Google Text-to-Speech)
+   - **Explanation**: gTTS was chosen due to its lightweight nature and multi-language support, including both English and Arabic. It provides a simple yet effective way to convert text into speech.
 
-### Audio Transcription
-- **English Model**: `openai/whisper-base`
-- **Arabic Model**: `jonatasgrosman/wav2vec2-large-xlsr-53-arabic`
-- **Explanation**: Whisper is a state-of-the-art model for speech recognition, providing high accuracy for English transcription. For Arabic, Wav2Vec2 is a leading model in Automatic Speech Recognition (ASR) and offers excellent performance in transcribing Arabic speech.
+4. **Audio Transcription**:
+   - **English Model**: [`openai/whisper-base`](https://huggingface.co/openai/whisper-base)
+   - **Arabic Model**: [`jonatasgrosman/wav2vec2-large-xlsr-53-arabic`](https://huggingface.co/jonatasgrosman/wav2vec2-large-xlsr-53-arabic)
+   - **Explanation**: Whisper is one of the latest advancements in speech recognition, offering high accuracy in English transcription. For Arabic, Wav2Vec2 is a state-of-the-art model for Automatic Speech Recognition (ASR) and was selected for its proven performance in transcribing Arabic speech.
 
-## Justification for Model and Pipeline Choices
-- **Text Summarization (BART)**: The `facebook/bart-large-cnn` model is tuned for abstractive summarization, making it robust and suitable for generating coherent summaries in English.
+### Justification for Model and Pipeline Choices
+
+- **Text Summarization (BART)**: BART was chosen due to its robustness and fine-tuning capabilities for long-document summarization. The `facebook/bart-large-cnn` model is specifically tuned for abstractive summarization, making it suitable for generating high-quality, coherent summaries in English.
   
-- **Translation (Helsinki-NLP/opus-mt-en-ar)**: This model is highly effective for bilingual applications, ensuring high-quality translations between English and Arabic for a broad range of inputs.
-  
-- **Text-to-Speech (gTTS)**: Chosen for its ease of use and multi-language support, gTTS efficiently converts both English and Arabic text into speech.
-  
-- **Audio Transcription (Whisper & Wav2Vec2)**: Whisper offers superior accuracy for English transcription, including diverse accents, while Wav2Vec2 is a cutting-edge model fine-tuned for Arabic speech recognition, ensuring high accuracy in transcription.
+- **Translation (Helsinki-NLP/opus-mt-en-ar)**: This model is highly effective for translating between English and Arabic, making it a natural choice for bilingual applications. It ensures that the translation quality remains high for a wide variety of inputs.
 
-## Sample Run
-### Sample 1: Text (English-Arabic)
-![Screenshot](Screenshot_2024-10-01_152046.png)
+- **Text-to-Speech (gTTS)**: Google Text-to-Speech was selected for its ease of use and multi-language support. It converts text to speech in both English and Arabic efficiently, providing an intuitive way to listen to the summarized text.
 
-### Sample 2: Audio to Text (Arabic)
-![Screenshot](Screenshot_2024-10-01_152557.png)
+- **Audio Transcription (Whisper and Wav2Vec2)**: Whisper provides superior accuracy in English transcription, especially for diverse accents. For Arabic, Wav2Vec2 is a cutting-edge model fine-tuned for Arabic speech recognition, offering excellent transcription accuracy.
+
+
+## Sample Run 
+
+**Sample 1  Text (English-Arabic):**
+
+![Screenshot 2024-10-01 152046](https://github.com/user-attachments/assets/8b480587-310f-45dc-9903-70ecd6dd6feb)
+
+**Sample 2 (Audio - Text)[Arabic]:**
+
+![Screenshot 2024-10-01 152557](https://github.com/user-attachments/assets/2ec0d441-68a3-4141-9cee-ce41750e52bb)
 
 ## Demo
 You can view the live demo of this project on [https://huggingface.co/spaces/Faisalaldwaish1/A_Tool_for_Text_Extraction_and_Reading](#).
 
-## Presentation
-For more information, you can view the [Google Slides presentation](#).
+## Presenstation Link
+- [`Google Slides`](https://docs.google.com/presentation/d/1csnTqCqBjsmVmruqe7W-cSrLqkad8YsOxaVWsxYRYzQ/edit?usp=sharing)
